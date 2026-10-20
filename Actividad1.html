@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad 1: Ciclos y grafos cíclicos</title>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: linear-gradient(to top left, white, #30acbd);
+      color: #111827;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    main {
+      width: min(900px, 100%);
+      text-align: center
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin: 0 0 3px
+    }
+
+    .prompt {
+      margin: 0 auto 20px;
+      max-width: 760px;
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      line-height: 1.55
+    }
+
+    .graph {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      display: block;
+      margin: 0 auto
+    }
+
+    .edge {
+      stroke: #000000;
+      stroke-width: 2;
+      stroke-linecap: round
+    }
+
+    .node {
+      fill: #ffffff;
+      stroke: #000000;
+      stroke-width: 1;
+    }
+
+    .label {
+      font-size: 20px;
+      fill: #111827;
+      text-anchor: middle;
+      dominant-baseline: central
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Actividad 1: Ciclos y grafos cíclicos</h1>
+    <p class="prompt">Observá el grafo e identificá si contiene un ciclo. Si lo tiene, escribí su notación matemática e
+      indicá su longitud. Justificá si el grafo es cíclico o no.</p>
+    <svg class="graph" viewBox="0 0 240 340" role="img" aria-label="Grafo con vértices A, C, E y D">
+      <line class="edge" x1="38" y1="95" x2="166" y2="27" />
+      <line class="edge" x1="38" y1="95" x2="166" y2="157" />
+      <line class="edge" x1="166" y1="27" x2="166" y2="157" />
+      <line class="edge" x1="166" y1="157" x2="166" y2="275" />
+      <circle class="node" cx="38" cy="95" r="24" /><text class="label" x="38" y="95">A</text>
+      <circle class="node" cx="166" cy="27" r="24" /><text class="label" x="166" y="27">C</text>
+      <circle class="node" cx="166" cy="157" r="24" /><text class="label" x="166" y="157">E</text>
+      <circle class="node" cx="166" cy="275" r="24" /><text class="label" x="166" y="275">D</text>
+    </svg>
+  </main>
+</body>
+
+</html>
